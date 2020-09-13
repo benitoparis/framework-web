@@ -1,0 +1,17 @@
+{
+  "name": "framework-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "npm run": "nodemon --watch",
+    "npm build": "tsc index.js",
+    "npm start": "concurrently --kill-others \"nodemon --watch\" \"tsc index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
