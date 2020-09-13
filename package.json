@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "npm run": "nodemon --watch",
-    "npm build": "tsc index.js",
-    "npm start": "concurrently --kill-others \"nodemon --watch\" \"tsc index.js\""
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
   },
   "author": "",
   "license": "ISC",
